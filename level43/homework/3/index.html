@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        main {
+            padding: 15px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .child {
+            width: 250px;
+            border: 3px solid #000;
+            padding: 25px;
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+
+        h1 {
+            letter-spacing: 4px;
+        }
+
+        button {
+            width: 80%;
+            padding: 15px;
+            border: none;
+            border-radius: 25px;
+            background-color: #000;
+            color: #FFF;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .insta {
+            transition: background-color 300ms linear, color 300ms linear;
+        }
+
+        .insta:hover {
+            background-color: hotpink;
+            color: #FFF;
+            cursor: pointer;
+        }
+
+        .insta button {
+            transition: background-color 300ms linear, color 300ms linear, transform 400ms linear;
+            background-color: hotpink;
+            color: #FFF;
+            border: 1.5px solid black;
+        }
+
+        .insta button:hover {
+            background-color: #FFF;
+            color: hotpink;
+            transform: scale(1.05);
+        }
+
+        /*hi*/
+
+        .twitter {
+            transition: background-color 300ms linear, color 300ms linear;
+        }
+
+        .twitter:hover {
+            background-color: royalblue;
+            color: #FFF;
+            cursor: pointer;
+        }
+
+        .twitter button {
+            transition: background-color 300ms linear, color 300ms linear, transform 400ms linear;
+            background-color: royalblue;
+            color: #FFF;
+            border: 1.5px solid black;
+        }
+
+        .twitter button:hover {
+            background-color: #FFF;
+            color: royalblue;
+            transform: scale(1.05);
+        }
+
+        /*hi*/
+
+        .youtube {
+            transition: background-color 300ms linear, color 300ms linear;
+        }
+
+        .youtube:hover {
+            background-color: red;
+            color: #FFF;
+            cursor: pointer;
+        }
+
+        .youtube button {
+            transition: background-color 300ms linear, color 300ms linear, transform 400ms linear;
+            background-color: red;
+            color: #FFF;
+            border: 1.5px solid black;
+        }
+
+        .youtube button:hover {
+            background-color: #FFF;
+            color: red;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="child twitter">
+            <img src="./assets/twitter.png" width="65px">
+            <h1>TWITTER</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, id! Harum necessitatibus similique tempore, quia rerum molestiae deleniti?</p>
+            <button>READ MORE</button>
+        </div>
+        <div class="child insta">
+            <img src="./assets/instagram.png" width="65px">
+            <h1>INSTAGRAM</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, id! Harum necessitatibus similique tempore, quia rerum molestiae deleniti?</p>
+            <button>READ MORE</button>
+        </div>
+        <div class="child youtube">
+            <img src="./assets/youtube.png" width="65px">
+            <h1>YOUTUBE</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, id! Harum necessitatibus similique tempore, quia rerum molestiae deleniti?</p>
+            <button>READ MORE</button>
+        </div>
+    </main>
+</body>
+
+</html>
