@@ -35,7 +35,7 @@
 //     for (let i = 0; i < arr.length; i++) {
 //         stringifiedArr.push(String(arr[i]))
 //     }
-        
+
 //     let stringed = stringifiedArr.join("")
 //     return parseInt(stringed, 2)
 // }
@@ -45,3 +45,20 @@
 // console.log(binaryArrayToNumber([0,0,1,0]))
 // console.log(binaryArrayToNumber([1,1,1,1]))
 // console.log(binaryArrayToNumber([0,1,1,0]))
+
+// var number = function (busStops) {
+//     let totalPeople = 0
+//     for (let stops of busStops) {
+//         let get_in = stops[0]
+//         let get_out = stops[1]
+//         totalPeople = totalPeople + get_in
+//         totalPeople = totalPeople - get_out
+//     }
+//     return totalPeople
+// }
+
+// // TEST CASES
+// console.log(number([[10,0],[3,5],[5,8]]))
+// console.log(number([[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]]))
+// console.log(number([[3,0],[9,1],[4,8],[12,2],[6,1],[7,8]]))
+
