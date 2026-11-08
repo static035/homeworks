@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body {
+            width: 100%;
+            height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            align-items: center;
+            padding: 25px;
+        }
+        .container {
+            width: 90%;
+            height: fit-content;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px;
+            padding: 25px;
+            border: 5px solid black;
+            border-radius: 1rem;
+        }
+        @media screen and (max-width: 1750px) {
+            .container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media screen and (max-width: 1200px) {
+            .container {
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 1050px) {
+            img {
+                width: 200px;
+            }
+        }
+        @media screen and (max-width: 550px) {
+            .container {
+                grid-template-columns: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Container</h1>
+    <div class="container">
+        <div class="item"><img src="https://imgs.search.brave.com/Uyh5t_FR5z5491Bm5wCIFLehc9cgg_bzr375F4gJacA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMTYv/OTE2LzQ3OS9zbWFs/bC9wbGFjZWhvbGRl/ci1pY29uLWRlc2ln/bi1mcmVlLXZlY3Rv/ci5qcGc" alt=""></div>
+        <div class="item"><img src="https://imgs.search.brave.com/Uyh5t_FR5z5491Bm5wCIFLehc9cgg_bzr375F4gJacA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMTYv/OTE2LzQ3OS9zbWFs/bC9wbGFjZWhvbGRl/ci1pY29uLWRlc2ln/bi1mcmVlLXZlY3Rv/ci5qcGc" alt=""></div>
+        <div class="item"><img src="https://imgs.search.brave.com/Uyh5t_FR5z5491Bm5wCIFLehc9cgg_bzr375F4gJacA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMTYv/OTE2LzQ3OS9zbWFs/bC9wbGFjZWhvbGRl/ci1pY29uLWRlc2ln/bi1mcmVlLXZlY3Rv/ci5qcGc" alt=""></div>
+        <div class="item"><img src="https://imgs.search.brave.com/Uyh5t_FR5z5491Bm5wCIFLehc9cgg_bzr375F4gJacA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMTYv/OTE2LzQ3OS9zbWFs/bC9wbGFjZWhvbGRl/ci1pY29uLWRlc2ln/bi1mcmVlLXZlY3Rv/ci5qcGc" alt=""></div>
+        <div class="item"><img src="https://imgs.search.brave.com/Uyh5t_FR5z5491Bm5wCIFLehc9cgg_bzr375F4gJacA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMTYv/OTE2LzQ3OS9zbWFs/bC9wbGFjZWhvbGRl/ci1pY29uLWRlc2ln/bi1mcmVlLXZlY3Rv/ci5qcGc" alt=""></div>
+        <div class="item"><img src="https://imgs.search.brave.com/Uyh5t_FR5z5491Bm5wCIFLehc9cgg_bzr375F4gJacA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMTYv/OTE2LzQ3OS9zbWFs/bC9wbGFjZWhvbGRl/ci1pY29uLWRlc2ln/bi1mcmVlLXZlY3Rv/ci5qcGc" alt=""></div>
+    </div>
+</body>
+</html>

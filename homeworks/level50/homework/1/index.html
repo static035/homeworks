@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 90vh;
+
+            background-color: #5a35e8;
+        }
+
+        .container {
+            height: 500px;
+            width: 500px;
+
+            border: 2px dashed white;
+            border-top: none;
+
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+
+        .child-container {
+            height: 500px;
+            width: 500px;
+
+            border-radius: 50%;
+
+            animation-name: rotateAnimation;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+
+            position: relative;
+        }
+
+        .child {
+            height: 200px;
+            width: 200px;
+            background-color: #e0bc81;
+            border-radius: 50%;
+            position: relative;
+
+            left: -100px;
+
+            animation-name: ball;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+        }
+
+        @keyframes rotateAnimation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(-250deg);
+            }
+        }
+
+        @keyframes ball {
+            from {
+                left: -100px;
+            }
+
+            50% {
+                left: -50px;
+            }
+
+            to {
+                left: -100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="child-container">
+            <div class="child"></div>
+        </div>
+    </div>
+
+</body>
+</html>
