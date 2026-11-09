@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jir Mirza - Contact Us</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
-    <h1>Contact Us Page</h1>
+    <div id="contact-body">
+        <header>
+            <div id="title">
+                <a href="../main.html"><img src="../assets/logo.png" alt="Website Logo" id="logo"></a>
+                <a href="../main.html" id="title-home">Jir Mirza</a>
+            </div>
+            <nav>
+                <a href="./about.html">About Us</a>
+                <a href="./products.html">Products</a>
+                <a href="./contactUs.html">Contact Us</a>
+            </nav>
+        </header>
+        <div id="contact-container">
+            <div id="box">
+                <h1 id="contact-heading">Contact Us</h1>
+                <span id="contact-span">Have a question? Get in touch with us!</span>
+                <form onsubmit="event.preventDefault()" id="contact-form">
+                    <input type="text" placeholder="Your Name" name="name"><br>
+                    <input type="email" placeholder="Your Email" name="email"><br>
+                    <textarea name="contactMessage" id="contact-message" placeholder="Your Message..."></textarea><br>
+                    <div id="form-buttons">
+                        <button type="button" popovertarget="popover-div">Send Message</button>
+                        <button>
+                            <a href="../main.html">Take Me To Dashboard</a>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div popover id="popover-div">
+            <h1>Message Sent!</h1>
+            <p>We will get back to you as soon as possible. Please Stand By.</p>
+            <button popovertargetaction="hide" popovertarget="popover-div">Got it.</button>
+        </div>
+    </div>
 </body>
+
 </html>
