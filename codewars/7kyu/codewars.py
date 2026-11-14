@@ -92,3 +92,30 @@
 # print(remove_smallest([5, 3, 2, 1, 4]))
 # print(remove_smallest([1, 2, 3, 1, 1]))
 # print(remove_smallest([]))
+
+# import math
+
+# def factorial(n):
+#     if n < 0 or n > 12:
+#         raise ValueError
+#     return math.factorial(n)
+
+# ## TEST CASES
+# print(factorial(0))
+# print(factorial(1))
+# print(factorial(2))
+# print(factorial(3))
+
+# def two_oldest_ages(ages):
+#     sorted_ages = sorted(ages)
+#     reversed = sorted_ages[::-1]
+    
+#     oldest = int(reversed[0])
+#     second = int(reversed[1])
+#     result = [second, oldest]
+#     return result
+
+# ## TEST CASES
+# print(two_oldest_ages([1, 5, 87, 45, 8, 8]))
+# print(two_oldest_ages([6, 5, 83, 5, 3, 18]))
+# print(two_oldest_ages([10, 1]))

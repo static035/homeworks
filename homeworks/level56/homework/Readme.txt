@@ -1,0 +1,1 @@
+Codewars for homework, please check codewars folder to see finished codewars homeworks.
